@@ -3,7 +3,7 @@
 
 % 1. NAL - Branje datoteke 1
 
-filename = 'C:\Users\Nina Mikelj\NRO_2526_vaja1\nro\NRO_DN1\naloga1_1.txt';
+filename = 'naloga1_1.txt';
 skiprows = 2;
 podatki = importdata(filename, ' ', skiprows);
 t = podatki.data;
@@ -11,7 +11,7 @@ t = podatki.data;
 
 % 2. NAL - Branje datoteke 2
 
-fid = fopen("C:\Users\Nina Mikelj\NRO_2526_vaja1\nro\NRO_DN1\naloga1_2.txt", 'r');
+fid = fopen('naloga1_2.txt', 'r');
 prva_vrstica = fgetl(fid);   % prebere celotno prvo vrstico kot besedilo
 
 % Izloči število iz te vrstice
