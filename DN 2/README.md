@@ -1,0 +1,1 @@
+Primerjava metod:
