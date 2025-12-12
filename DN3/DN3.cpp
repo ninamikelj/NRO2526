@@ -21,7 +21,7 @@ double calcAtan(double* x, int* N_steps)
 
 int main()
 {
-    // obmoèje integrala
+    // obmoÃ¨je integrala
     const double a = 0.0;
     const double PI = std::acos(-1.0);
     const double b = PI / 4.0;
@@ -61,4 +61,5 @@ int main()
     std::cout << std::fixed << std::setprecision(12);
     std::cout << "\nOcena integrala = " << integral << "\n";
     return 0;
+
 }
