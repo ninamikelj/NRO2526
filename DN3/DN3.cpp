@@ -12,7 +12,7 @@ double calcAtan(double* x, int* N_steps)
     double term = xx;            
     double sum = term / 1.0;   
     for (int k = 1; k < N; ++k) {
-        term *= -(xx * xx);     // now term = (-1)^k * x^(2k+1)
+        term *= -(xx * xx);  
         sum += term / (2.0 * k + 1.0);
     }
     return sum;
@@ -62,4 +62,5 @@ int main()
     return 0;
 
 }
+
 
