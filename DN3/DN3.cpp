@@ -8,7 +8,7 @@ double calcAtan(double* x, int* N_steps)
     int N = *N_steps;
     if (N <= 0) return 0.0;
 
-    // Taylor series: arctan(x) = sum_{k=0..inf} (-1)^k * x^(2k+1) / (2k+1)
+    // Taylorjeva formula
     double term = xx;            // k = 0 -> x^(1)
     double sum = term / 1.0;    // prvi term
     for (int k = 1; k < N; ++k) {
@@ -21,7 +21,7 @@ double calcAtan(double* x, int* N_steps)
 
 int main()
 {
-    // obmoèje integrala
+    // obmocje integrala
     const double a = 0.0;
     const double PI = std::acos(-1.0);
     const double b = PI / 4.0;
@@ -61,4 +61,5 @@ int main()
     std::cout << std::fixed << std::setprecision(12);
     std::cout << "\nOcena integrala = " << integral << "\n";
     return 0;
+
 }
