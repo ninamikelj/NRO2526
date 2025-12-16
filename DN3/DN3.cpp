@@ -42,7 +42,6 @@ int main()
 
     auto f = [&](double x)->double {
         double arg = x / 2.0;
-        // calcAtan zahteva double* in int*, zato pripravimo lokalni dvojnik
         double arg_copy = arg;
         int Ncopy = tayl_terms;
         double at = calcAtan(&arg_copy, &Ncopy);
@@ -62,5 +61,6 @@ int main()
     return 0;
 
 }
+
 
 
