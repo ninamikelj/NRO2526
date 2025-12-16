@@ -9,10 +9,9 @@ double calcAtan(double* x, int* N_steps)
     if (N <= 0) return 0.0;
 
     // Taylorjeva formula
-    double term = xx;            // k = 0 -> x^(1)
-    double sum = term / 1.0;    // prvi term
+    double term = xx;            
+    double sum = term / 1.0;   
     for (int k = 1; k < N; ++k) {
-        // multiply by -x^2 to go from x^(2k-1+1) to x^(2k+1) with alternating sign
         term *= -(xx * xx);     // now term = (-1)^k * x^(2k+1)
         sum += term / (2.0 * k + 1.0);
     }
@@ -63,3 +62,4 @@ int main()
     return 0;
 
 }
+
